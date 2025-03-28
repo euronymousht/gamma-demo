@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Bilgi Paneli</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      padding: 20px;
+    }
+    section {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #00e0ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Güncel Bilgi Paneli (Demo)</h1>
+
+  <section id="doviz">
+    <h2>Döviz Kurları</h2>
+  </section>
+
+  <section id="altin">
+    <h2>Altın Fiyatları</h2>
+  </section>
+
+  <section id="yakıt">
+    <h2>Yakıt Fiyatları</h2>
+  </section>
+
+  <section id="hammadde">
+    <h2>Hammadde Fiyatları</h2>
+  </section>
+
+  <script>
+    document.getElementById('doviz').innerHTML += `<ul>
+      <li>1 TL = 0.031 USD</li>
+      <li>1 TL = 0.029 Euro</li>
+      <li>1 TL = 3.42 Sırp Dinarı</li>
+      <li>1 Euro = 117.55 Sırp Dinarı</li>
+    </ul>`;
+
+    document.getElementById('altin').innerHTML += `<ul>
+      <li>Altın (USD): $2000</li>
+      <li>Altın (TRY): ₺64700</li>
+      <li>Altın (EUR): €1850</li>
+      <li>Altın (RSD): дин227000</li>
+    </ul>`;
+
+    document.getElementById('yakıt').innerHTML += `<ul>
+      <li>Benzin (litre): €1.80 | ₺62.50 | дин730</li>
+      <li>Mazot (litre): €1.70 | ₺59.00 | дин710</li>
+      <li>Petrol (varil): $85 | ₺2750 | дин31000</li>
+    </ul>`;
+
+    document.getElementById('hammadde').innerHTML += `<ul>
+      <li>Demir: $120 | ₺3900 | €110 | дин14000</li>
+      <li>Çelik: $750 | ₺24300 | €695 | дин87500</li>
+      <li>Bakır: $9000 | ₺291000 | €8350 | дин1045000</li>
+      <li>Çimento: $100 | ₺3250 | €92 | дин11700</li>
+    </ul>`;
+  </script>
+</body>
+</html>
